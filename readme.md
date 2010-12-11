@@ -8,3 +8,8 @@ Codenazi is highly configurable, so if you don't want to use some rules, you can
 - all rules can be defined in one configuration ".json" file
 - you can create many conf. files, because you might have different rules for different environments f.e. server and client.
 - use of all available checker, independent of language it is written in, if you have one more - you can add it
+
+## Currently used tools
+  - JSLint http://www.jslint.com/lint.html
+  - Closure Linter http://code.google.com/p/closure-linter
+  - Closure Compiler http://code.google.com/p/closure-compiler
