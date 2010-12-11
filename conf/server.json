@@ -1,0 +1,33 @@
+{
+    "jslint": {
+        "bitwise": true,
+        "browser": false,
+        "cap": false,
+        "debug": false,
+        "devel": false,
+        "eqeqeq": true,
+        "es5": true,
+        "evil": true,
+        "forin": true,
+        "fragment": false,
+        "immed": true,
+        "indent": 4,
+        "laxbreak": false,
+        "maxlen": 90,
+        "nomen": false,
+        "newcap": true,
+        "on": false,
+        "onevar": true,
+        "passfail": true,
+        "plusplus": false,
+        "predef": ["global", "process", "require", "__dirname", "__filename", "module", "exports"],
+        "regexp": true,
+        "rhino": false,
+        "safe": false,
+        "strict": false,
+        "sub": false,
+        "undef": true,
+        "white": false,
+        "windows": false
+    }
+}

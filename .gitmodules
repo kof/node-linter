@@ -1,3 +1,6 @@
 [submodule "tools/JSLint"]
 	path = tools/JSLint
 	url = https://github.com/douglascrockford/JSLint.git
+[submodule "deps/argsparser"]
+	path = deps/argsparser
+	url = git@github.com:kof/node-argsparser.git
