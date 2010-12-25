@@ -20,7 +20,7 @@
         "onevar": true,
         "passfail": true,
         "plusplus": false,
-        "predef": ["global", "process", "require", "__dirname", "__filename", "module", "exports"],
+        "predef": ["global", "process", "require", "__dirname", "__filename", "module", "exports", "Buffer"],
         "regexp": true,
         "rhino": false,
         "safe": false,
