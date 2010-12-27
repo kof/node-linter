@@ -1,0 +1,6 @@
+{    
+    "closure-linter": {
+        "nojsdoc": false,
+        "strict": false
+    }
+}

@@ -1,16 +1,36 @@
-var a = require("assert"),
-    fs = require("fs"),
-    path = require("path"),
-    root = path.join(__dirname, ".."),
-    codenazi = require( path.join(root, "lib", "codenazi") ),
-    fixture = path.join(root, "test", "fixture.js");
+var fs = require("fs"),
+    join = require("path").join;
 
-var errors;
 
-codenazi.run(fixture, "server", function(err) {
-    errors = err;    
+    
+var root = join(__dirname, ".."),
+    lib = join(root, "lib"),
+    fixtures = join(root, "test", "fixtures");
+
+options.confRoot = fixtures;
+options.linter.jslint = join(lib, "linter", "jslint");
+options.linter["closure-linter"] = join(lib, "linter", "closure-linter");
+
+test("jslint", 1, function() {
+    stop();
+    run( join(fixtures, "jslint.js"), "jslint", function(err) {
+        equal(err.length, 1, "errors count");
+        start();
+    });
 });
 
-a.ok(!errors, "jslint has detected an error");
+test("closure-linter", 1, function() {
+    stop()
+    run( join(fixtures, "closure-linter.js"), "closure-linter", function(err) {
+        equal(err.length, 4, "errors count");
+        start();
+    });
+});
 
-require("util").print("All tests passed...\n");
+test("dir lint with all linters", 1, function() {
+    stop()
+    run( fixtures, "all", function(err) {
+        equal(err.length, 7, "errors count");
+        start();
+    });
+});

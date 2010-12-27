@@ -1,4 +1,8 @@
-{
+{    
+    "closure-linter": {
+        "strict": false,
+        "nojsdoc": false
+    },
     "jslint": {
         "bitwise": true,
         "browser": false,
@@ -21,7 +25,7 @@
         "passfail": false,
         "plusplus": false,
         "predef": ["global", "process", "require", "__dirname", "__filename", "module", "exports", "Buffer"],
-        "regexp": false,
+        "regexp": true,
         "rhino": false,
         "safe": false,
         "strict": false,
@@ -29,9 +33,5 @@
         "undef": true,
         "white": false,
         "windows": false
-    },
-    "closure-linter": {
-        "nojsdoc": false,
-        "strict": false
-    }
+    }    
 }
