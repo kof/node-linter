@@ -70,6 +70,7 @@ var start = Date.now();
 o.callback = function(errors) {
     errors.forEach(function(err) {
         util.puts(
+            '--------------------------------------------------------------------------',
             colorize(err.file, 'red'),
             'Line: ' + err.line,
             err.linter + ' says: ' + err.message

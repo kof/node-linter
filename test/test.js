@@ -7,6 +7,7 @@ var root = join(__dirname, '..'),
 
 options.linter.jslint = join(lib, 'linter', 'jslint');
 options.linter['closure-linter'] = join(lib, 'linter', 'closure-linter');
+options.linter['closure-compiler'] = join(lib, 'linter', 'closure-compiler');
 
 test('jslint', 1, function() {
     stop();
@@ -32,13 +33,25 @@ test('closure-linter', 1, function() {
     });    
 });
 
+test('closure-compiler', 1, function() {
+    stop();
+    run({
+        files: join(fixtures, 'closure-compiler.js'),
+        config: join(fixtures, 'closure-compiler.json'),
+        callback: function(err) {
+            equal(err.length, 2, 'errors count');
+            start();
+        }
+    });    
+});
+
 test('dir lint with all linters', 1, function() {
     stop();
     run({
         files: fixtures,
-        config: join(fixtures, 'all.json'),
+        config: join(root, 'conf', 'server.json'),
         callback: function(err) {
-            equal(err.length, 7, 'errors count');
+            equal(err.length, 12, 'errors count');
             start();
         }
     });    
@@ -48,10 +61,10 @@ test('dir lint with all linters recursively', 1, function() {
     stop();
     run({
         files: fixtures,
-        config: join(fixtures, 'all.json'),
+        config: join(root, 'conf', 'server.json'),
         recursive: true,
         callback: function(err) {
-            equal(err.length, 9, 'errors count');
+            equal(err.length, 15, 'errors count');
             start();
         }
     });

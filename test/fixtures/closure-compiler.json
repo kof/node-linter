@@ -1,39 +1,4 @@
-{
-    "jslint": {
-        "bitwise": true,
-        "browser": false,
-        "cap": false,
-        "debug": false,
-        "devel": false,
-        "eqeqeq": true,
-        "es5": true,
-        "evil": true,
-        "forin": true,
-        "fragment": false,
-        "immed": true,
-        "indent": 4,
-        "laxbreak": false,
-        "maxlen": 90,
-        "nomen": false,
-        "newcap": true,
-        "on": false,
-        "onevar": true,
-        "passfail": false,
-        "plusplus": false,
-        "predef": ["global", "process", "require", "__dirname", "__filename", "module", "exports", "Buffer"],
-        "regexp": false,
-        "rhino": false,
-        "safe": false,
-        "strict": false,
-        "sub": false,
-        "undef": true,
-        "white": false,
-        "windows": false
-    },
-    "closure-linter": {
-        "nojsdoc": false,
-        "strict": false
-    },
+{    
     "closure-compiler": {
         // Input and output charset for all files. By default, we accept UTF-8 as input and output US_ASCII
         "charset": "utf-8",
@@ -49,7 +14,7 @@
         // strictModuleDepCheck, undefinedVars, unknownDefines, visibility
         "jscomp_error": null,
         // Turn off the named class of warnings:
-        "jscomp_off": "undefinedVars", // don't need to check undefined vars if using jslint which is already doing it
+        "jscomp_off": null,
         // Make the named class of warnings a normal warning.
         "jscomp_warning": null,
         // The logging level (standard java.util. logging.Level values) for Compiler
