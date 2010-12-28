@@ -21,9 +21,13 @@ You can easily add more quality tools.
 
 ## Usage
 
-	$ codenazi -h print help - read there about options
-		
+### command line - print help and read about usage
+	
+	$ codenazi -h 
+
+### api		
 	var codenazi = require('codenazi');
+	
 	codenazi.run({
 		files: "/path/to/file" // can be an array or directory
 		config: "conf/server.json" // can be a json object or path to conf json, see ./conf/*
