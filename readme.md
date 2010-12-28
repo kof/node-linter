@@ -58,12 +58,14 @@ Errors array passed to callback contains objects in this format:
 - put the linter into ./deps/litner-name
 - write a wrapper for it and put it into ./lib/linter/linter-name.js
   - wrapper should implement one function:
+  
 	module.exports = function(file, options, callback){
 	
 	};
   - wrapper should talk with validator and on complete call the callback and pass errors array in unified error format
   - see ./lib/linter/jslint.js
   - options for this validator in json should be named
+  
 	{
 		"validator-name": {
 			//options
