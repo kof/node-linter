@@ -73,3 +73,9 @@ Errors array passed to callback contains objects in this format:
 			"some-option": true 
 		}  
 	}
+	
+## License
+
+- node-codenazi - MIT
+- jslint - read `./deps/JSLint/fulljslint.js`
+- closure-linter and closure-compiler - Apache License, Version 2.0	
