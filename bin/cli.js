@@ -9,9 +9,10 @@ var o = codenazi.options;
 var help = [
     '\nUsage: codenazi [options]',
     'Options:',
-    '-f, --file, --files path to the file, or directory to be validated',
-    '-d, --dir path to the directory, where all files will be validated',
+    '-f, --file, --files path to file, files (space separated) ' +
+    'or directory to be validated',
     '-c, --config path to the config file',
+    '-r, --recursive read dir recursively',
     '-h, --help show this help\n'
 ];
 
