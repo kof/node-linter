@@ -40,7 +40,8 @@ You can easily add more quality tools.
 	});
 
 ## Config file
-- You can create a config which contains all rules for every validator. See ./conf/*.json
+- You can create a config file which contains all rules for every validator. 
+- See ./conf/server.json for examples
 - *.json configs can have comments in it	
 	
 ## Unified error format
@@ -59,13 +60,16 @@ Errors array passed to callback contains objects in this format:
 - write a wrapper for it and put it into ./lib/linter/linter-name.js
   - wrapper should implement one function:
   
+  
 	module.exports = function(file, options, callback){
 	
 	};
+	
   - wrapper should talk with validator and on complete call the callback and pass errors array in unified error format
   - see ./lib/linter/jslint.js
   - options for this validator in json should be named
-  
+
+	  
 	{
 		"validator-name": {
 			//options
