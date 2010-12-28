@@ -1,10 +1,51 @@
 var join = require('path').join,
+    util = require('util'),
     root = join(__dirname, '..'),
     args = require(join(root, 'deps', 'argsparser')).parse(),
-    codenazi = require(root),
-    util = require('util');
+    codenazi = require(root);
 
-var start = Date.now();
+var o = codenazi.options;
+
+var help = [
+    '\nUsage: codenazi [options]',
+    'Options:',
+    '-f, --file, --files path to the file, or directory to be validated',
+    '-d, --dir path to the directory, where all files will be validated',
+    '-c, --config path to the config file',
+    '-h, --help show this help\n'
+];
+
+for (var key in args) {
+    switch (key) {
+        case '-f':
+        case '--file':
+        case '--files':
+            /**
+             * @see codenazi.options.files
+             */
+            o.files = args[key];
+            break;
+        case '-c':
+        case '--config':
+            /**
+             * @see codenazi.options.config
+             */
+            o.config = args[key];
+            break;
+        case '-r':
+        case '--recursive':
+            /**
+             * @see codenazi.options.recursive
+             */
+            o.recursive = args[key];
+            break;
+        case '-h':
+        case '-?':
+        case '--help':
+            util.puts.apply(util, help);
+            return;
+    }
+}
 
 
 /**
@@ -20,7 +61,12 @@ function colorize(str, color) {
     return '\x1B[' + colors[color] + 'm' + str + '\x1B[0m';
 }
 
-codenazi.run(args['-f'], args['-c'], function(errors) {
+var start = Date.now();
+
+/**
+ * @see codenazi.options.callback
+ */
+o.callback = function(errors) {
     errors.forEach(function(err) {
         util.puts(
             colorize(err.file, 'red'),
@@ -37,4 +83,6 @@ codenazi.run(args['-f'], args['-c'], function(errors) {
     if (errors.length === 0) {
         util.puts(colorize('Successfull validated.\x1B[0m', 'green'));
     }
-});
+};
+
+codenazi.run();
