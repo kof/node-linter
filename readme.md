@@ -12,9 +12,14 @@ You can easily add more quality tools.
 - unified errors reporting format
 
 ## Currently used tools
-  - JSLint http://www.jslint.com/lint.html
-  - Closure Linter http://code.google.com/p/closure-linter
-  - Closure Compiler http://code.google.com/p/closure-compiler
+- [JSLint](http://www.jslint.com/lint.html)
+- [Closure Linter](http://code.google.com/p/closure-linter)
+- [Closure Compiler](http://code.google.com/p/closure-compiler)
+
+## Error message descriptions
+- [jslint](http://www.jslint.com/msgs.html)
+- [Closure Compiler](http://code.google.com/intl/de-DE/closure/compiler/docs/error-ref.html)
+- [Googles Styleguide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
 
 ## Installation
 	npm install codenazi

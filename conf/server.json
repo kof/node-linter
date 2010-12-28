@@ -1,37 +1,76 @@
 {
     "jslint": {
+        // true if ADsafe rules should be enforced. See http://www.ADsafe.org/.
+        "adsafe": false,
+        // true if bitwise operators should not be allowed. 
         "bitwise": true,
+        // true if the standard browser globals should be predefined.
         "browser": false,
+        // true if upper case HTML should be allowed.
         "cap": false,
+        // true if CSS workarounds should be tolerated.
+        "css": true,
+        // true if debugger statements should be allowed. Set this option to false before going into production.
         "debug": false,
+        // true if browser globals that are useful in development should be predefined.
         "devel": false,
+        // true if === should be required.
         "eqeqeq": true,
+        // true if ES5 syntax should be allowed.
         "es5": true,
+        // true if eval should be allowed.
         "evil": true,
+        // true if unfiltered for in statements should be allowed.
         "forin": true,
+        // true if HTML fragments should be allowed.
         "fragment": false,
+        // true if immediate function invocations must be wrapped in parens
         "immed": true,
+        // The number of spaces used for indentation (default is 4)
         "indent": 4,
+        // true if statement breaks should not be checked.
         "laxbreak": false,
-        "maxlen": 90,
+        // The maximum number of warnings reported (default is 50)
+        "maxerr": 100,
+        // The maximum number of characters in a line
+        "maxlen": 80,
+        // true if names should be checked for initial or trailing underbars
         "nomen": false,
+        // true if Initial Caps must be used with constructor functions.
         "newcap": true,
+        // true if HTML event handlers should be allowed. 
         "on": false,
+        // true if only one var statement per function should be allowed.
         "onevar": true,
+        // true if the scan should stop on first error.
         "passfail": false,
+        // true if ++ and -- should not be allowed.
         "plusplus": false,
+        // An array of strings, the names of predefined global variables, or an object whose keys are global variable names, and whose values are booleans that determine if each variable is assignable
         "predef": ["global", "process", "require", "__dirname", "__filename", "module", "exports", "Buffer"],
+        // true if . and [^...] should not be allowed in RegExp literals. These forms should not be used when validating in secure applications.
         "regexp": false,
+        // true if the Rhino environment globals should be predefined.
         "rhino": false,
+        // true if the safe subset rules are enforced. These rules are used by ADsafe. It enforces the safe subset rules but not the widget structure rules.
         "safe": false,
+        // true if the ES5 "use strict"; pragma is required. Do not use this option carelessly.
         "strict": false,
+        // true if subscript notation may be used for expressions better expressed in dot notation.
         "sub": false,
+        // true if variables must be declared before used.
         "undef": true,
+        // true if strict whitespace rules apply.
         "white": false,
+        // true if the Yahoo Widgets globals should be predefined
+        "widget": false,
+        // true if the Windows globals should be predefined.
         "windows": false
     },
     "closure-linter": {
+        // presence of correct JsDoc annotations
         "nojsdoc": false,
+        // If you want Closure Linter to be more strict about style rules like spacing, JsDoc types, and author tags
         "strict": false
     },
     "closure-compiler": {
