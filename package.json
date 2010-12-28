@@ -1,15 +1,15 @@
 {
-    "name": "codenazi",
+    "name": "linter",
     "description": "Code quality tools collection in one module",
     "version": "0.0.1",
     "author": "Oleg Slobodskoi <oleg008@gmail.com>",
     "repository": {
         "type": "git",
-        "url": "http://github.com/kof/node-codenazi.git"
+        "url": "http://github.com/kof/node-linter.git"
     },
     "keywords": [ "code quality", "code style", "stylechecker", "lint", "jslint", "closure-linter", "closure-compiler" ],
     "directories": { "lib": "./lib" },
-    "bin": { "codenazi": "./bin/cli.js" },
+    "bin": { "linter": "./bin/cli.js" },
     "engines": { "node": ">= 0.3.0" },
     "scripts": {
         "install": "make install"  

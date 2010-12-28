@@ -51,7 +51,7 @@ test('dir lint with all linters', 1, function() {
         files: fixtures,
         config: join(root, 'conf', 'server.json'),
         callback: function(err) {
-            equal(err.length, 12, 'errors count');
+            equal(err.length, 11, 'errors count');
             start();
         }
     });    
@@ -64,7 +64,7 @@ test('dir lint with all linters recursively', 1, function() {
         config: join(root, 'conf', 'server.json'),
         recursive: true,
         callback: function(err) {
-            equal(err.length, 15, 'errors count');
+            equal(err.length, 13, 'errors count');
             start();
         }
     });

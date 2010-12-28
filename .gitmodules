@@ -1,5 +1,5 @@
-[submodule "tools/JSLint"]
-	path = tools/JSLint
+[submodule "deps/JSLint"]
+	path = deps/JSLint
 	url = https://github.com/douglascrockford/JSLint.git
 [submodule "deps/argsparser"]
 	path = deps/argsparser

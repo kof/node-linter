@@ -1,1 +1,1 @@
-module.exports = require("./lib/codenazi");
+module.exports = require("./lib/linter");

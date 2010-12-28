@@ -1,8 +1,8 @@
-## Codenazi - code quality tool for javascript.
+## Linter - code quality tool for javascript.
 
-Codenazi doesn't implement validators - it utilizes free available quality tools. 
+Linter doesn't implement validators - it utilizes free available quality tools. 
 Javascript lang is too flexible and it becomes very hard to work in larger teams, especially if some of members are newbie on javascript.
-Codenazi is highly configurable, so if you don't want to use some rules, you can create your own conf file.
+Linter is highly configurable, so if you don't want to use some rules, you can create your own conf file.
 You can easily add more quality tools.
 
 ## Features
@@ -22,18 +22,18 @@ You can easily add more quality tools.
 - [Googles Styleguide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
 
 ## Installation
-	npm install codenazi
+	npm install linter
 
 ## Usage
 
 ### command line - print help and read about usage
 	
-	$ codenazi -h 
+	$ linter -h 
 
 ### api		
-	var codenazi = require('codenazi');
+	var linter = require('linter');
 	
-	codenazi.run({
+	linter.run({
 		files: "/path/to/file" // can be an array or directory
 		config: "conf/server.json" // can be a json object or path to conf json, see ./conf/*
 		recursive: false, // read dir recursively, default to false
@@ -81,6 +81,6 @@ Errors array passed to callback contains objects in this format:
 	
 ## License
 
-- node-codenazi - MIT
+- node-linter - MIT
 - jslint - read `./deps/JSLint/fulljslint.js`
 - closure-linter and closure-compiler - Apache License, Version 2.0	

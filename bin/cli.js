@@ -2,12 +2,12 @@ var join = require('path').join,
     util = require('util'),
     root = join(__dirname, '..'),
     args = require(join(root, 'deps', 'argsparser')).parse(),
-    codenazi = require(root);
+    linter = require(root);
 
-var o = codenazi.options;
+var o = linter.options;
 
 var help = [
-    '\nUsage: codenazi [options]',
+    '\nUsage: linter [options]',
     'Options:',
     '-f, --file, --files path to file, files (space separated) ' +
     'or directory to be validated',
@@ -22,21 +22,21 @@ for (var key in args) {
         case '--file':
         case '--files':
             /**
-             * @see codenazi.options.files
+             * @see linter.options.files
              */
             o.files = args[key];
             break;
         case '-c':
         case '--config':
             /**
-             * @see codenazi.options.config
+             * @see linter.options.config
              */
             o.config = args[key];
             break;
         case '-r':
         case '--recursive':
             /**
-             * @see codenazi.options.recursive
+             * @see linter.options.recursive
              */
             o.recursive = args[key];
             break;
@@ -65,7 +65,7 @@ function colorize(str, color) {
 var start = Date.now();
 
 /**
- * @see codenazi.options.callback
+ * @see linter.options.callback
  */
 o.callback = function(errors) {
     errors.forEach(function(err) {
@@ -87,4 +87,4 @@ o.callback = function(errors) {
     }
 };
 
-codenazi.run();
+linter.run();

@@ -5,6 +5,6 @@ var join = require('path').join,
 //qunit.options.coverage = false;
 
 qunit.run({
-    code: join(root, 'lib', 'codenazi.js'),
+    code: join(root, 'lib', 'linter.js'),
     tests: join(root, 'test', 'test.js')
 });
