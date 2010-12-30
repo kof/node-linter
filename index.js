@@ -1,1 +1,1 @@
-module.exports = require("./lib/linter");
+module.exports = require('./lib/linter');
