@@ -20,6 +20,7 @@ You can easily add more quality tools.
 - [jslint](http://www.jslint.com/msgs.html)
 - [Closure Compiler](http://code.google.com/intl/de-DE/closure/compiler/docs/error-ref.html)
 - [Googles Styleguide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
+- [Crockfords Styleguide](http://javascript.crockford.com/code.html)
 
 ## Installation
 	npm install linter
