@@ -11,6 +11,11 @@ You can easily add more quality tools.
 - it uses all available linter, if you have one more - you can add it
 - unified errors reporting format
 
+## TODO
+- implement generic filter, to enable linter wrappers to ignore some options, which are not customizable by original linter
+- add html linter, e.g. https://github.com/kangax/html-minifier
+- add css linter
+
 ## Currently used tools
 - [JSLint](http://www.jslint.com/lint.html)
 - [Closure Linter](http://code.google.com/p/closure-linter)
