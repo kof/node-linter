@@ -13,6 +13,7 @@ You can easily add more quality tools.
 
 ## TODO
 - implement generic filter, to enable linter wrappers to ignore some options, which are not customizable by original linter
+- probably one generic way to turn off any option in any file using comments (jslint like)
 - add html linter, e.g. https://github.com/kangax/html-minifier
 - add css linter
 
