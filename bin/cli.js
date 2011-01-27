@@ -1,7 +1,7 @@
 var join = require('path').join,
     util = require('util'),
     root = join(__dirname, '..'),
-    args = require(join(root, 'deps', 'argsparser')).parse(),
+    args = require('argsparser').parse(),
     linter = require(root);
 
 var o = linter.options;
