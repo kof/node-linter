@@ -12,6 +12,9 @@
     "bin": { "linter": "./bin/cli.js" },
     "main": "./lib/linter.js",
     "engines": { "node": ">= 0.3.6" },
+    "dependencies": {
+        "argsparser": ">= 0.0.3"
+    },
     "scripts": {
         "install": "make install"  
     },

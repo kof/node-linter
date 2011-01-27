@@ -14,18 +14,14 @@
         "debug": false,
         // true if browser globals that are useful in development should be predefined.
         "devel": false,
-        // true if === should be required.
-        "eqeqeq": true,
         // true if ES5 syntax should be allowed.
         "es5": true,
         // true if eval should be allowed.
-        "evil": true,
+        "evil": false,
         // true if unfiltered for in statements should be allowed.
         "forin": true,
         // true if HTML fragments should be allowed.
         "fragment": false,
-        // true if immediate function invocations must be wrapped in parens
-        "immed": true,
         // The number of spaces used for indentation (default is 4)
         "indent": 4,
         // true if statement breaks should not be checked.
