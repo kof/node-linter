@@ -1,7 +1,7 @@
 {
     "name": "linter",
     "description": "Code quality tools collection in one module",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "author": "Oleg Slobodskoi <oleg008@gmail.com>",
     "repository": {
         "type": "git",
@@ -11,7 +11,7 @@
     "directories": { "lib": "./lib" },
     "bin": { "linter": "./bin/cli.js" },
     "main": "./lib/linter.js",
-    "engines": { "node": ">= 0.3.0" },
+    "engines": { "node": ">= 0.3.6" },
     "scripts": {
         "install": "make install"  
     },

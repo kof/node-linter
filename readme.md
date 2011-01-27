@@ -44,6 +44,7 @@ You can easily add more quality tools.
 		files: "/path/to/file" // can be an array or directory
 		config: "conf/server.json" // can be a json object or path to conf json, see ./conf/*
 		recursive: false, // read dir recursively, default to false
+		format: false, // set to true if you want to get a string as errors argument, formatted for console output
 		// callback functions, which is called on complete and errors array is passed
 		// see ./bin/cli.js
 		callback: function(errors) {
