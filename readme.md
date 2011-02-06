@@ -14,19 +14,22 @@ You can easily add more quality tools.
 ## TODO
 - implement generic filter, to enable linter wrappers to ignore some options, which are not customizable by original linter
 - probably one generic way to turn off any option in any file using comments (jslint like)
-- add html linter, e.g. https://github.com/kangax/html-minifier
+- add html linter, e.g. <https://github.com/kangax/html-minifier>
 - add css linter
+- somehow have javascript lint's options in the config file (currently you'd have to specify your own configuration file in javascript lint's own style.).
 
 ## Currently used tools
 - [JSLint](http://www.jslint.com/lint.html)
 - [Closure Linter](http://code.google.com/p/closure-linter)
 - [Closure Compiler](http://code.google.com/p/closure-compiler)
+- [Javascript Lint](http://javascriptlint.com/)
 
 ## Error message descriptions
 - [jslint](http://www.jslint.com/msgs.html)
 - [Closure Compiler](http://code.google.com/intl/de-DE/closure/compiler/docs/error-ref.html)
 - [Googles Styleguide](http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml)
 - [Crockfords Styleguide](http://javascript.crockford.com/code.html)
+- [Javascript Lint](http://javascriptlint.com/docs/index.htm)
 
 ## Installation
 	npm install linter
@@ -55,8 +58,8 @@ You can easily add more quality tools.
 
 ## Config file
 - You can create a config file which contains all rules for every validator. 
-- See ./conf/server.json for examples
-- *.json configs can have comments in it	
+- See `./conf/server.json` for examples
+- `*.json` configs can have comments in it	
 	
 ## Unified error format
 Errors array passed to callback contains objects in this format:
@@ -70,26 +73,27 @@ Errors array passed to callback contains objects in this format:
 
 ## How to add more linters
 
-- put the linter into ./deps/litner-name
-- write a wrapper for it and put it into ./lib/linter/linter-name.js
-- wrapper should implement one function:
-  
-	module.exports = function(file, options, callback){
+- put the linter into `./deps/linter-name`
+- write a wrapper for it and put it into `./lib/linter/linter-name.js`
+- wrapper should implement one function
+
+    	module.exports = function(file, options, callback){
 	
-	};
+    	};
 	
 - wrapper should talk with validator and on complete call the callback and pass errors array in unified error format
-- see ./lib/linter/jslint.js
+- see `./lib/linter/jslint.js` for an example
 - option for new validator in json should have name
 
-	{
-		"validator-name": {  
-			"some-option": true 
-		}  
-	}
+    	{
+    		"validator-name": {  
+    			"some-option": true 
+    		}  
+    	}
 	
 ## License
 
 - node-linter - MIT
 - jslint - read `./deps/JSLint/fulljslint.js`
 - closure-linter and closure-compiler - Apache License, Version 2.0	
+- javascript lint - ?
