@@ -99,5 +99,8 @@
         "use_only_custom_externs": null,
         // Specifies the warning level to use: QUIET, DEFAULT, VERBOSE
         "warning_level": "VERBOSE"
+    },
+    "javascriptlint": {
+      // no settable options, yet.
     }
 }
