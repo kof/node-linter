@@ -1,5 +1,5 @@
 test:
-	node bin/test.js
+	qunit -c lib/linter.js -t test/test.js --cov false
 
 lint:
 	linter -f lib -r

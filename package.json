@@ -1,7 +1,7 @@
 {
     "name": "linter",
     "description": "Code quality tools collection in one module",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "author": "Oleg Slobodskoi <oleg008@gmail.com>",
     "repository": {
         "type": "git",
@@ -13,7 +13,8 @@
     "main": "./lib/linter.js",
     "engines": { "node": ">= 0.3.6" },
     "dependencies": {
-        "argsparser": ">= 0.0.3"
+        "argsparser": ">= 0.0.3",
+        "sharedjs": ">= 0.0.1"
     },
     "scripts": {
         "install": "make install"  

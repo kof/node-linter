@@ -93,7 +93,7 @@ Errors array passed to callback contains objects in this format:
 	
 ## License
 
-- node-linter - MIT
+- node-linter - MIT Style
 - jslint - read `./deps/JSLint/fulljslint.js`
 - closure-linter and closure-compiler - Apache License, Version 2.0	
-- javascript lint - ?
+- javascript lint - GNU GENERAL PUBLIC LICENSE Version 2 http://javascriptlint.svn.sourceforge.net/viewvc/javascriptlint/trunk/COPYING
