@@ -1,5 +1,5 @@
 test:
-	qunit -c lib/linter.js -t test/test.js --cov false
+	qunit -c ./lib/linter.js -t ./test/test.js --cov false
 
 lint:
 	linter -f lib -r
