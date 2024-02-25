@@ -1,4 +1,4 @@
-## Linter - code quality tool for javascript.
+## Linter - Code Quality Tool For Javascript.
 
 Linter doesn't implement validators - it utilizes free available quality tools. 
 Javascript lang is too flexible and it becomes very hard to work in larger teams, especially if some of members are newbie on javascript.
@@ -6,17 +6,17 @@ Linter is highly configurable, so if you don't want to use some rules, you can c
 You can easily add more quality tools.
 
 ## Features
-- all rules can be defined in one configuration ".json" file
-- you can create many conf. files, because you might have different rules for different environments f.e. server and client.
-- it uses all available linter, if you have one more - you can add it
-- unified errors reporting format
+- All rules can be defined in one configuration ".json" file
+- You can create many conf. files, because you might have different rules for different environments f.e. server and client.
+- It uses all available linter, if you have one more - you can add it
+- Unified errors reporting format
 
 ## TODO
-- implement generic filter, to enable linter wrappers to ignore some options, which are not customizable by original linter
-- probably one generic way to turn off any option in any file using comments (jslint like)
-- add html linter, e.g. <https://github.com/kangax/html-minifier>
-- add css linter
-- somehow have javascript lint's options in the config file (currently you'd have to specify your own configuration file in javascript lint's own style.).
+- Implement generic filter, to enable linter wrappers to ignore some options, which are not customizable by original linter
+- Probably one generic way to turn off any option in any file using comments (jslint like)
+- Add html linter, e.g. <https://github.com/kangax/html-minifier>
+- Add css linter
+- Somehow have javascript lint's options in the config file (currently you'd have to specify your own configuration file in javascript lint's own style.).
 
 ## Currently used tools
 - [JSLint](http://www.jslint.com/lint.html)
